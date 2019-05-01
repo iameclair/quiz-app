@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+//declare color variables
+$primary:#13215b;
+$secondary:#F3CB00;
+$optionColor:#17a2b8;
+
+.App{
+  font-family: Roboto, verdana, sans-serif;
+  text-align: center;
+  font-size: 24px;
+  color: $primary;
+  h1{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: $secondary;
+    background-color: $primary;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .option{
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    color: #121212;
+    border-radius: .3em;
+    background-color: $optionColor;
+  }
+  .option:hover{
+    background-color: $primary;
+    color:$secondary;
+  }
+  .Question{
+    padding: 1%;
+    border: none;
+    li{
+      list-style: none;
+    }
+    input[type="radio"] {
+      padding: 5%;
+      width: 25px;
+      &:checked + label:before {
+        background: $secondary;
+      }
+    }
+  }
+
+}
